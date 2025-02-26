@@ -23,7 +23,8 @@ jobs:
           port: 22
           script: |
             ls
-            cd /home/ubuntu/career-builder-full-stack-course-sell-app/
+            cd /home/ubuntu/${{ github.event.repository.name }}/
+            ls
             git pull origin main
             npm install
             npm run build
