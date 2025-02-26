@@ -23,4 +23,9 @@ jobs:
           port: 22
           script: |
             ls
-            whoami
+            cd career-builder-full-stack-course-sell-app/
+            git pull origin main
+            npm install
+            npm run build
+            sudo systemctl restart nginx
+            pm2 start npm --name "next-js" -- start
