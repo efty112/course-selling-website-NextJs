@@ -19,6 +19,7 @@ jobs:
           host: 65.1.3.201
           username: ubuntu
           key: ${{ secrets.KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
           port: 22
           script: |
             ls
