@@ -16,7 +16,7 @@ jobs:
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@v1.2.1
         with:
-          host: 65.1.3.201
+          host: 13.201.101.21
           username: ubuntu
           key: ${{ secrets.KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
